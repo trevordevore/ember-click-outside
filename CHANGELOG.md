@@ -4,6 +4,16 @@
 
 
 
+
+## v6.1.1 (2024-10-03)
+
+#### :bug: Bug Fix
+* [#266](https://github.com/zeppelin/ember-click-outside/pull/266) fix: when exceptSelector is defined and e.target is empty an error is thrown from closest function ([@Scra3](https://github.com/Scra3))
+
+#### Committers: 2
+- Gabor Babicz ([@zeppelin](https://github.com/zeppelin))
+- scra ([@Scra3](https://github.com/Scra3))
+
 ## v6.1.0 (2023-10-06)
 
 #### :rocket: Enhancement
