@@ -88,7 +88,7 @@ export default class ClickOutsideModifier extends Modifier {
 
   _createHandler(element, action, exceptSelector) {
     return (e) => {
-      if (exceptSelector && closest(e.target, exceptSelector)) {
+      if (exceptSelector && e.target && closest(e.target, exceptSelector)) {
         return;
       }
 
