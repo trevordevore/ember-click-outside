@@ -122,8 +122,8 @@ module('Integration | Modifier | on-click-outside', function (hooks) {
         {{#if this.topSide}}
           Blue
         {{else}}
-          {{!-- template-lint-disable no-invalid-interactive no-action --}}
-          <div class="outside" {{action "toggleFlag"}}>Yellow</div>
+          {{!-- template-lint-disable no-invalid-interactive --}}
+          <div class="outside" {{on "click" this.toggleFlag}}>Yellow</div>
         {{/if}}
 
         <div {{on-click-outside this.didClickOutside}}></div>
