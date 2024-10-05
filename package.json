@@ -5,10 +5,6 @@
   "repository": "https://github.com/zeppelin/ember-click-outside",
   "license": "MIT",
   "author": "Gabor Babicz <gabor@gaborbabicz.com>",
-  "workspaces": [
-    "ember-click-outside",
-    "test-app"
-  ],
   "scripts": {
     "build": "pnpm --filter ember-click-outside build",
     "lint": "pnpm --filter '*' lint",
