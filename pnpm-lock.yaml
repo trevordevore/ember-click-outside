@@ -10,10 +10,10 @@ importers:
     devDependencies:
       '@release-it-plugins/lerna-changelog':
         specifier: ^5.0.0
-        version: 5.0.0(release-it@15.6.0)
+        version: 5.0.0(release-it@15.6.0(encoding@0.1.13))
       '@release-it-plugins/workspaces':
         specifier: ^3.2.0
-        version: 3.2.0(release-it@15.6.0)
+        version: 3.2.0(release-it@15.6.0(encoding@0.1.13))
       concurrently:
         specifier: ^7.2.1
         version: 7.6.0
@@ -22,7 +22,7 @@ importers:
         version: 2.8.4
       release-it:
         specifier: ^15.5.0
-        version: 15.6.0
+        version: 15.6.0(encoding@0.1.13)
 
   ember-click-outside:
     dependencies:
@@ -74,7 +74,7 @@ importers:
         version: 11.1.0(eslint@7.32.0)
       eslint-plugin-prettier:
         specifier: ^4.0.0
-        version: 4.2.1(eslint-config-prettier@8.6.0)(eslint@7.32.0)(prettier@2.8.4)
+        version: 4.2.1(eslint-config-prettier@8.6.0(eslint@7.32.0))(eslint@7.32.0)(prettier@2.8.4)
       prettier:
         specifier: ^2.5.1
         version: 2.8.4
@@ -95,7 +95,7 @@ importers:
         version: 3.0.1
       '@ember/test-helpers':
         specifier: ^2.9.3
-        version: 2.9.3(@babel/core@7.20.12)(ember-source@4.10.0)
+        version: 2.9.3(@babel/core@7.20.12)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))
       '@embroider/test-setup':
         specifier: ^1.7.1
         version: 1.8.3
@@ -119,7 +119,7 @@ importers:
         version: 2.6.0(webpack@5.75.0)
       ember-cli:
         specifier: ~4.10.0
-        version: 4.10.0
+        version: 4.10.0(encoding@0.1.13)(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6)
       ember-cli-app-version:
         specifier: ^5.0.0
         version: 5.0.0
@@ -128,7 +128,7 @@ importers:
         version: 7.26.11
       ember-cli-dependency-checker:
         specifier: ^3.3.1
-        version: 3.3.1(ember-cli@4.10.0)
+        version: 3.3.1(ember-cli@4.10.0(encoding@0.1.13)(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6))
       ember-cli-htmlbars:
         specifier: ^6.2.0
         version: 6.2.0
@@ -142,14 +142,14 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       ember-click-outside:
-        specifier: ^6.1.0
-        version: link:../ember-click-outside
+        specifier: ^6.1.1
+        version: 6.1.1(@babel/core@7.20.12)
       ember-disable-prototype-extensions:
         specifier: ^1.1.3
         version: 1.1.3
       ember-fetch:
         specifier: ^8.1.2
-        version: 8.1.2
+        version: 8.1.2(encoding@0.1.13)
       ember-load-initializers:
         specifier: ^2.1.2
         version: 2.1.2(@babel/core@7.20.12)
@@ -158,22 +158,22 @@ importers:
         version: 7.0.0
       ember-qunit:
         specifier: ^6.2.0
-        version: 6.2.0(@ember/test-helpers@2.9.3)(ember-source@4.10.0)(qunit@2.19.4)(webpack@5.75.0)
+        version: 6.2.0(@ember/test-helpers@2.9.3(@babel/core@7.20.12)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)))(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))(qunit@2.19.4)(webpack@5.75.0)
       ember-resolver:
         specifier: ^10.0.0
-        version: 10.0.0(@ember/string@3.0.1)(ember-source@4.10.0)
+        version: 10.0.0(@ember/string@3.0.1)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))
       ember-source:
         specifier: ~4.10.0
-        version: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0)
+        version: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)
       ember-source-channel-url:
         specifier: ^3.0.0
-        version: 3.0.0
+        version: 3.0.0(encoding@0.1.13)
       ember-template-lint:
         specifier: ^5.3.1
         version: 5.5.1
       ember-try:
         specifier: ^2.0.0
-        version: 2.0.0
+        version: 2.0.0(encoding@0.1.13)
       eslint:
         specifier: ^7.32.0
         version: 7.32.0
@@ -188,7 +188,7 @@ importers:
         version: 15.6.1(eslint@7.32.0)
       eslint-plugin-prettier:
         specifier: ^4.2.1
-        version: 4.2.1(eslint-config-prettier@8.6.0)(eslint@7.32.0)(prettier@2.8.4)
+        version: 4.2.1(eslint-config-prettier@8.6.0(eslint@7.32.0))(eslint@7.32.0)(prettier@2.8.4)
       eslint-plugin-qunit:
         specifier: ^7.3.4
         version: 7.3.4(eslint@7.32.0)
@@ -2750,6 +2750,9 @@ packages:
     resolution: {integrity: sha512-gex/GdqzR5NLPVHvqLml7YgJR3KDzq2MGtrB2EHSpk//bY26mWi0milYABBfiDK5Yw/onztwPitxNaZpBjjqng==}
     engines: {node: '>= 14'}
     hasBin: true
+
+  ember-click-outside@6.1.1:
+    resolution: {integrity: sha512-1SOW92/k5vm+QiLBdkiSxkxSEzvA1vWdVVAI5RLV9JFztA5cSEKB2m2+10Gvw90ItxekY92JVXXTXIPUcPBqYg==}
 
   ember-compatibility-helpers@1.2.6:
     resolution: {integrity: sha512-2UBUa5SAuPg8/kRVaiOfTwlXdeVweal1zdNPibwItrhR0IvPrXpaqwJDlEZnWKEoB+h33V0JIfiWleSG6hGkkA==}
@@ -7453,17 +7456,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/test-helpers@2.9.3(@babel/core@7.20.12)(ember-source@4.10.0)':
+  '@ember/test-helpers@2.9.3(@babel/core@7.20.12)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))':
     dependencies:
       '@ember/test-waiters': 3.0.2
       '@embroider/macros': 1.10.0
-      '@embroider/util': 1.10.0(ember-source@4.10.0)
+      '@embroider/util': 1.10.0(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.2.0
       ember-destroyable-polyfill: 2.0.3(@babel/core@7.20.12)
-      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0)
+      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)
     transitivePeerDependencies:
       - '@babel/core'
       - '@glint/template'
@@ -7570,12 +7573,12 @@ snapshots:
       lodash: 4.17.21
       resolve: 1.22.1
 
-  '@embroider/util@1.10.0(ember-source@4.10.0)':
+  '@embroider/util@1.10.0(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))':
     dependencies:
       '@embroider/macros': 1.10.0
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
-      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0)
+      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -7766,11 +7769,11 @@ snapshots:
     dependencies:
       '@octokit/types': 9.0.0
 
-  '@octokit/core@4.2.0':
+  '@octokit/core@4.2.0(encoding@0.1.13)':
     dependencies:
       '@octokit/auth-token': 3.0.3
-      '@octokit/graphql': 5.0.5
-      '@octokit/request': 6.2.3
+      '@octokit/graphql': 5.0.5(encoding@0.1.13)
+      '@octokit/request': 6.2.3(encoding@0.1.13)
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.0.0
       before-after-hook: 2.2.3
@@ -7784,9 +7787,9 @@ snapshots:
       is-plain-object: 5.0.0
       universal-user-agent: 6.0.0
 
-  '@octokit/graphql@5.0.5':
+  '@octokit/graphql@5.0.5(encoding@0.1.13)':
     dependencies:
-      '@octokit/request': 6.2.3
+      '@octokit/request': 6.2.3(encoding@0.1.13)
       '@octokit/types': 9.0.0
       universal-user-agent: 6.0.0
     transitivePeerDependencies:
@@ -7796,18 +7799,18 @@ snapshots:
 
   '@octokit/openapi-types@16.0.0': {}
 
-  '@octokit/plugin-paginate-rest@5.0.1(@octokit/core@4.2.0)':
+  '@octokit/plugin-paginate-rest@5.0.1(@octokit/core@4.2.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.0
+      '@octokit/core': 4.2.0(encoding@0.1.13)
       '@octokit/types': 8.2.1
 
-  '@octokit/plugin-request-log@1.0.4(@octokit/core@4.2.0)':
+  '@octokit/plugin-request-log@1.0.4(@octokit/core@4.2.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.0
+      '@octokit/core': 4.2.0(encoding@0.1.13)
 
-  '@octokit/plugin-rest-endpoint-methods@6.8.1(@octokit/core@4.2.0)':
+  '@octokit/plugin-rest-endpoint-methods@6.8.1(@octokit/core@4.2.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 4.2.0
+      '@octokit/core': 4.2.0(encoding@0.1.13)
       '@octokit/types': 8.2.1
       deprecation: 2.3.1
 
@@ -7817,23 +7820,23 @@ snapshots:
       deprecation: 2.3.1
       once: 1.4.0
 
-  '@octokit/request@6.2.3':
+  '@octokit/request@6.2.3(encoding@0.1.13)':
     dependencies:
       '@octokit/endpoint': 7.0.5
       '@octokit/request-error': 3.0.3
       '@octokit/types': 9.0.0
       is-plain-object: 5.0.0
-      node-fetch: 2.6.9
+      node-fetch: 2.6.9(encoding@0.1.13)
       universal-user-agent: 6.0.0
     transitivePeerDependencies:
       - encoding
 
-  '@octokit/rest@19.0.5':
+  '@octokit/rest@19.0.5(encoding@0.1.13)':
     dependencies:
-      '@octokit/core': 4.2.0
-      '@octokit/plugin-paginate-rest': 5.0.1(@octokit/core@4.2.0)
-      '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.2.0)
-      '@octokit/plugin-rest-endpoint-methods': 6.8.1(@octokit/core@4.2.0)
+      '@octokit/core': 4.2.0(encoding@0.1.13)
+      '@octokit/plugin-paginate-rest': 5.0.1(@octokit/core@4.2.0(encoding@0.1.13))
+      '@octokit/plugin-request-log': 1.0.4(@octokit/core@4.2.0(encoding@0.1.13))
+      '@octokit/plugin-rest-endpoint-methods': 6.8.1(@octokit/core@4.2.0(encoding@0.1.13))
     transitivePeerDependencies:
       - encoding
 
@@ -7854,13 +7857,13 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@release-it-plugins/lerna-changelog@5.0.0(release-it@15.6.0)':
+  '@release-it-plugins/lerna-changelog@5.0.0(release-it@15.6.0(encoding@0.1.13))':
     dependencies:
       execa: 5.1.1
       lerna-changelog: 2.2.0
       lodash.template: 4.5.0
       mdast-util-from-markdown: 1.3.0
-      release-it: 15.6.0
+      release-it: 15.6.0(encoding@0.1.13)
       tmp: 0.2.1
       validate-peer-dependencies: 2.2.0
       which: 2.0.2
@@ -7868,11 +7871,11 @@ snapshots:
       - bluebird
       - supports-color
 
-  '@release-it-plugins/workspaces@3.2.0(release-it@15.6.0)':
+  '@release-it-plugins/workspaces@3.2.0(release-it@15.6.0(encoding@0.1.13))':
     dependencies:
       detect-indent: 6.1.0
       detect-newline: 3.1.0
-      release-it: 15.6.0
+      release-it: 15.6.0(encoding@0.1.13)
       semver: 7.3.8
       url-join: 4.0.1
       validate-peer-dependencies: 1.2.0
@@ -8183,7 +8186,7 @@ snapshots:
       indent-string: 4.0.0
 
   ajv-formats@2.1.1(ajv@8.12.0):
-    dependencies:
+    optionalDependencies:
       ajv: 8.12.0
 
   ajv-keywords@3.5.2(ajv@6.12.6):
@@ -9382,10 +9385,14 @@ snapshots:
       ora: 3.4.0
       through2: 3.0.2
 
-  consolidate@0.16.0(mustache@4.2.0):
+  consolidate@0.16.0(handlebars@4.7.7)(lodash@4.17.21)(mustache@4.2.0)(underscore@1.13.6):
     dependencies:
       bluebird: 3.7.2
+    optionalDependencies:
+      handlebars: 4.7.7
+      lodash: 4.17.21
       mustache: 4.2.0
+      underscore: 1.13.6
 
   content-disposition@0.5.4:
     dependencies:
@@ -9738,10 +9745,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-dependency-checker@3.3.1(ember-cli@4.10.0):
+  ember-cli-dependency-checker@3.3.1(ember-cli@4.10.0(encoding@0.1.13)(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6)):
     dependencies:
       chalk: 2.4.2
-      ember-cli: 4.10.0
+      ember-cli: 4.10.0(encoding@0.1.13)(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6)
       find-yarn-workspace-root: 1.2.1
       is-git-url: 1.0.0
       resolve: 1.22.1
@@ -9930,7 +9937,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli@4.10.0:
+  ember-cli@4.10.0(encoding@0.1.13)(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6):
     dependencies:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-modules-amd': 7.20.11(@babel/core@7.20.12)
@@ -9969,7 +9976,7 @@ snapshots:
       ember-cli-normalize-entity-name: 1.0.0
       ember-cli-preprocess-registry: 3.3.0
       ember-cli-string-utils: 1.1.0
-      ember-source-channel-url: 3.0.0
+      ember-source-channel-url: 3.0.0(encoding@0.1.13)
       ensure-posix-path: 1.1.1
       execa: 5.1.1
       exit: 0.1.2
@@ -10018,7 +10025,7 @@ snapshots:
       sort-package-json: 1.57.0
       symlink-or-copy: 1.3.1
       temp: 0.9.4
-      testem: 3.10.1
+      testem: 3.10.1(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6)
       tiny-lr: 2.0.0
       tree-sync: 2.1.0
       uuid: 8.3.2
@@ -10085,6 +10092,14 @@ snapshots:
       - walrus
       - whiskers
 
+  ember-click-outside@6.1.1(@babel/core@7.20.12):
+    dependencies:
+      '@embroider/addon-shim': 1.8.4
+      ember-modifier: 3.2.7(@babel/core@7.20.12)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+
   ember-compatibility-helpers@1.2.6(@babel/core@7.20.12):
     dependencies:
       babel-plugin-debug-macros: 0.2.0(@babel/core@7.20.12)
@@ -10107,7 +10122,7 @@ snapshots:
 
   ember-disable-prototype-extensions@1.1.3: {}
 
-  ember-fetch@8.1.2:
+  ember-fetch@8.1.2(encoding@0.1.13):
     dependencies:
       abortcontroller-polyfill: 1.7.5
       broccoli-concat: 4.2.5
@@ -10121,7 +10136,7 @@ snapshots:
       ember-cli-babel: 7.26.11
       ember-cli-typescript: 4.2.1
       ember-cli-version-checker: 5.1.2
-      node-fetch: 2.6.9
+      node-fetch: 2.6.9(encoding@0.1.13)
       whatwg-fetch: 3.6.2
     transitivePeerDependencies:
       - encoding
@@ -10152,16 +10167,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-qunit@6.2.0(@ember/test-helpers@2.9.3)(ember-source@4.10.0)(qunit@2.19.4)(webpack@5.75.0):
+  ember-qunit@6.2.0(@ember/test-helpers@2.9.3(@babel/core@7.20.12)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)))(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))(qunit@2.19.4)(webpack@5.75.0):
     dependencies:
-      '@ember/test-helpers': 2.9.3(@babel/core@7.20.12)(ember-source@4.10.0)
+      '@ember/test-helpers': 2.9.3(@babel/core@7.20.12)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0))
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
       ember-auto-import: 2.6.0(webpack@5.75.0)
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.0.0
-      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0)
+      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)
       qunit: 2.19.4
       resolve-package-path: 4.0.3
       silent-error: 1.1.1
@@ -10170,11 +10185,12 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-resolver@10.0.0(@ember/string@3.0.1)(ember-source@4.10.0):
+  ember-resolver@10.0.0(@ember/string@3.0.1)(ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)):
     dependencies:
       '@ember/string': 3.0.1
       ember-cli-babel: 7.26.11
-      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0)
+    optionalDependencies:
+      ember-source: 4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -10188,13 +10204,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-source-channel-url@3.0.0:
+  ember-source-channel-url@3.0.0(encoding@0.1.13):
     dependencies:
-      node-fetch: 2.6.9
+      node-fetch: 2.6.9(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
 
-  ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2)(webpack@5.75.0):
+  ember-source@4.10.0(@babel/core@7.20.12)(@glimmer/component@1.1.2(@babel/core@7.20.12))(webpack@5.75.0):
     dependencies:
       '@babel/helper-module-imports': 7.18.6
       '@babel/plugin-transform-block-scoping': 7.20.15(@babel/core@7.20.12)
@@ -10310,9 +10326,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-try-config@4.0.0:
+  ember-try-config@4.0.0(encoding@0.1.13):
     dependencies:
-      ember-source-channel-url: 3.0.0
+      ember-source-channel-url: 3.0.0(encoding@0.1.13)
       lodash: 4.17.21
       package-json: 6.5.0
       remote-git-tags: 3.0.0
@@ -10320,13 +10336,13 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  ember-try@2.0.0:
+  ember-try@2.0.0(encoding@0.1.13):
     dependencies:
       chalk: 4.1.2
       cli-table3: 0.6.3
       core-object: 3.1.5
       debug: 4.3.4
-      ember-try-config: 4.0.0
+      ember-try-config: 4.0.0(encoding@0.1.13)
       execa: 4.1.0
       fs-extra: 9.1.0
       resolve: 1.22.1
@@ -10565,12 +10581,13 @@ snapshots:
       resolve: 1.22.1
       semver: 6.3.0
 
-  eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.6.0)(eslint@7.32.0)(prettier@2.8.4):
+  eslint-plugin-prettier@4.2.1(eslint-config-prettier@8.6.0(eslint@7.32.0))(eslint@7.32.0)(prettier@2.8.4):
     dependencies:
       eslint: 7.32.0
-      eslint-config-prettier: 8.6.0(eslint@7.32.0)
       prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
+    optionalDependencies:
+      eslint-config-prettier: 8.6.0(eslint@7.32.0)
 
   eslint-plugin-qunit@7.3.4(eslint@7.32.0):
     dependencies:
@@ -12762,9 +12779,11 @@ snapshots:
 
   node-domexception@1.0.0: {}
 
-  node-fetch@2.6.9:
+  node-fetch@2.6.9(encoding@0.1.13):
     dependencies:
       whatwg-url: 5.0.0
+    optionalDependencies:
+      encoding: 0.1.13
 
   node-fetch@3.3.0:
     dependencies:
@@ -13439,10 +13458,10 @@ snapshots:
     dependencies:
       jsesc: 0.5.0
 
-  release-it@15.6.0:
+  release-it@15.6.0(encoding@0.1.13):
     dependencies:
       '@iarna/toml': 2.2.5
-      '@octokit/rest': 19.0.5
+      '@octokit/rest': 19.0.5(encoding@0.1.13)
       async-retry: 1.3.3
       chalk: 5.1.2
       cosmiconfig: 8.0.0
@@ -14166,7 +14185,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  testem@3.10.1:
+  testem@3.10.1(handlebars@4.7.7)(lodash@4.17.21)(underscore@1.13.6):
     dependencies:
       '@xmldom/xmldom': 0.8.6
       backbone: 1.4.1
@@ -14174,7 +14193,7 @@ snapshots:
       charm: 1.0.2
       commander: 2.20.3
       compression: 1.7.4
-      consolidate: 0.16.0(mustache@4.2.0)
+      consolidate: 0.16.0(handlebars@4.7.7)(lodash@4.17.21)(mustache@4.2.0)(underscore@1.13.6)
       execa: 1.0.0
       express: 4.18.2
       fireworm: 0.7.2
