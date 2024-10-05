@@ -8,12 +8,12 @@ on:
   pull_request: {}
 
 concurrency:
-   group: ci-${{ github.head_ref || github.ref }}
-   cancel-in-progress: true
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   test:
-    name: "Tests"
+    name: 'Tests'
     runs-on: ubuntu-latest
 
     steps:
@@ -21,11 +21,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 9.7.x
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 20.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -35,7 +35,7 @@ jobs:
         run: pnpm test
 
   floating:
-    name: "Floating Dependencies"
+    name: 'Floating Dependencies'
     runs-on: ubuntu-latest
 
     steps:
@@ -43,10 +43,10 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 9.7.x
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 20.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --no-lockfile
@@ -78,11 +78,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8.8.x
+          version: 9.7.x
       - name: Install Node
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 20.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
