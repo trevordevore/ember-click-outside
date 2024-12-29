@@ -1,4 +1,4 @@
-import ClickOutsideModifier from 'ember-click-outside';
+import ClickOutsideModifier from 'ember-click-outside/modifiers/on-click-outside';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
